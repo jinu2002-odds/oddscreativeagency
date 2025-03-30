@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('404_Web.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 65%; /* Adjusted for better placement */
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    font-family: poppins;
+    /* font-weight: bold; */
+    color: white;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.bold-text{
+    font-family: poppins;
+    font-weight: bold;
+}
+/* 🔹 Responsive Adjustments */
+@media (max-width: 768px) {
+    .text {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        font-size: 6vw;
+    }
+}
